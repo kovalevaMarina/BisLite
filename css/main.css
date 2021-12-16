@@ -1,6 +1,7 @@
 :root {
   --white-grey: #e8ebf1;
   --white-grey-2: #e7e7e7;
+  --white-grey-3: #dfe1e5;
   --black-grey: #626262;
   --black: #000000;
   --black-2: #363636;
@@ -67,6 +68,14 @@ body {
 
 .txt-uppercase {
   text-transform: uppercase;
+}
+
+.shape_icon {
+  max-width: 24px;
+}
+
+.br-grey {
+  border-bottom: 1px solid var(--white-grey-3);
 }
 
 /* styles for header block */
@@ -280,10 +289,6 @@ body {
   margin-right: 19px;
 }
 
-.services-list__shape_img {
-  max-width: 24px;
-}
-
 .services-list__item .title-h5 {
   color: var(--black);
   padding-top: 8px;
@@ -302,15 +307,22 @@ body {
   align-items: center;
 }
 
-.services-arrow {
+.arrow {
   width: 6px;
   height: 6px;
   display: inline-block;
+  transition: all var(--transition-effect);
   border-right: 2px solid var(--black);
   border-bottom: 2px solid var(--black);
   transform: rotate(-45deg);
+}
+
+.arrow-btn_left {
+  transform: rotate(130deg);
+}
+
+.services-arrow {
   margin-right: 10px;
-  transition: all var(--transition-effect);
 }
 
 .services-list__read_link {
@@ -328,4 +340,78 @@ body {
 .services-list__read_link:hover .services-arrow {
   border-right: 2px solid var(--blue);
   border-bottom: 2px solid var(--blue);
+}
+
+/* styles for works section */
+
+.gallery {
+  padding-top: 24px;
+  background-color: var(--white);
+}
+
+.gallery__top_wrap {
+  padding-bottom: 18px;
+  margin-bottom: 20px;
+}
+
+.gallery__top_title {
+  max-width: 145px;
+  width: 100%;
+}
+
+.gallery-btn {
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  margin: 0;
+  background-color: var(--cyan);
+  border: none;
+  border-radius: 50%;
+  position: relative;
+  cursor: pointer;
+}
+
+.gallery-btn:first-child {
+  margin-right: 11px;
+}
+
+.gallery-btn .arrow {
+  position: absolute;
+  top: 7px;
+  left: 7px;
+}
+
+.gellery__img {
+  padding-bottom: 40px;
+  margin-bottom: 21px;
+}
+
+.gallery__img_item {
+  position: relative;
+  overflow: hidden;
+  margin: 0 10px 10px 0;
+}
+
+.gallery__img_item:hover .gallery-hover__content {
+  transform: translateY(0);
+}
+
+.gallery-hover__wrap {
+  max-width: 90px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.gallery-hover__content {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 50%;
+  background-color: var(--blue);
+  transform: translateY(100%);
+  transition: var(--transition-effect);
+}
+
+.gallery-link .gallery-link__img {
+  cursor: pointer;
 }
