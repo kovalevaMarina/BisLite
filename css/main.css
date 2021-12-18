@@ -405,6 +405,10 @@ body {
   margin: 0 10px 10px 0;
 }
 
+.gallery__img_item:last-child {
+  margin: 0;
+}
+
 .gallery__img_item:hover .gallery-hover__content {
   transform: translateY(0);
 }
