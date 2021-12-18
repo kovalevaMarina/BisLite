@@ -296,6 +296,10 @@ body {
   margin-bottom: 10px;
 }
 
+.services-list__item:last-child {
+  margin: 0;
+}
+
 .services-list__shape {
   width: 40px;
   height: 40px;
