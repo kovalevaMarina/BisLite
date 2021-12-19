@@ -34,6 +34,7 @@ body {
   max-width: 1030px;
   padding: 0 15px;
   margin: 0 auto;
+  width: 100%;
 }
 
 .flex-container {
@@ -68,6 +69,8 @@ body {
 }
 
 .main-section {
+  display: flex;
+  align-items: center;
   flex-grow: 1;
 }
 
